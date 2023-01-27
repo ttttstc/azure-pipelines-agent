@@ -25,8 +25,4 @@ stages:
     - template: main.yml
     - task: Docker@2
       displayName: Build an image
-      inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/images/arm/Dockerfile'
-        tags: |
-          $(tag)
+    - script: echo building AAA test
