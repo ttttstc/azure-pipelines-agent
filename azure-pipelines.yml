@@ -22,7 +22,7 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    - template: main.yml
+    - template: simple-param.yml
     - task: Docker@2
       displayName: Build an image
     - script: echo building AAA test
