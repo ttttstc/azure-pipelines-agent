@@ -5,8 +5,6 @@
 trigger:
 - master
 
-
-
 resources:
 - repo: self
 
@@ -19,8 +17,6 @@ stages:
   jobs:
   - job: Build
     displayName: Build
-    pool:
-      vmImage: ubuntu-latest
     steps:
     - template: simple-param.yml
     - task: Docker@2
